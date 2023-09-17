@@ -2,7 +2,7 @@
 
 # Define the resource group, location, and name prefix for the local network gateways and VNET
 RESOURCE_GROUP="aws-azure-vpn"
-LOCATION="eastus"
+LOCATION="westeurope"
 NAME_PREFIX=$RESOURCE_GROUP
 VNET_NAME=$NAME_PREFIX-vnet
 
@@ -95,7 +95,7 @@ else
     az network public-ip create \
         --name $PUBLIC_IP_NAME \
         --resource-group $RESOURCE_GROUP \
-        --allocation-method Dynamic \
+        --allocation-method static \
         --location $LOCATION || exit 1
 fi
 

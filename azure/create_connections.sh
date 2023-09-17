@@ -2,7 +2,7 @@
 
 # Define the resource group, location, and name prefix for the local network gateways and VNET
 RESOURCE_GROUP="aws-azure-vpn"
-LOCATION="eastus"
+LOCATION="West Europe"
 NAME_PREFIX=$RESOURCE_GROUP
 
 # Define the internal VPC cidr block for AWS
@@ -10,14 +10,14 @@ AWS_VPC_CIDR="10.190.0.0/16"
 
 # Define the shared keys for the VPN connections
 SHARED_KEYS=(
-  "xxx"
-  "xxx"
+  "UzmrtUXzSYF.aYoWvriqig6QMsz35XkB",
+  "yEp7XI.ilT99sWCZ0SeLRUpXWNirg.M5"
 )
 
 # Define the list of AWS VPN IPs
 AWS_VPN_IPS=(
-  "1.1.1.1"
-  "1.1.1.1"
+  "3.126.105.29"
+  "18.198.71.29"
 )
 
 # Create a local network gateway and VPN connection for each AWS VPN IP if they do not already exist

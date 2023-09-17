@@ -4,7 +4,7 @@ locals {
 
 variable "aws_region" {
   description = "AWS Region to deploy resources"
-  default     = "us-east-2"
+  default     = "eu-central-1"
 }
 
 variable "environment" {
@@ -14,7 +14,7 @@ variable "environment" {
 
 variable "my_name" {
   description = "My name"
-  default     = "Todd Bernson"
+  default     = "Roderick Groesbeek"
 }
 
 variable "tags" {

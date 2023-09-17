@@ -1,7 +1,7 @@
 locals {
   aws_vpc_cidr = "10.190.0.0/16"
 
-  azure_gateway_ip = "20.127.105.184"
+  azure_gateway_ip = "108.142.176.20"
 
   azure_vnet_cidr = "10.191.0.0/16"
 }
